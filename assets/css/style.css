@@ -96,6 +96,13 @@ body {
 .flex-container .navbar .navbar-list .navbar-item {
   padding-left: 25px;
 }
+.flex-container .navbar .navbar-icons .input-search {
+  border-radius: 10px;
+  border: solid #1eb9c6;
+  outline: transparent;
+  margin-right: 0.5rem;
+  padding: 0.4rem 1rem;
+}
 .flex-container .navbar .navbar-icons i {
   color: #1eb9c6;
   font-size: 1.7rem;

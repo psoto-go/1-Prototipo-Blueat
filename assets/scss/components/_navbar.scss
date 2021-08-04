@@ -43,6 +43,13 @@
     }
 
     .navbar-icons {
+      .input-search {
+        border-radius: 10px;
+        border: solid $logo-color;
+        outline: transparent;
+        margin-right: 0.5rem;
+        padding: 0.4rem 1rem;
+      }
       i {
         color: $logo-color;
         font-size: 1.7rem;
