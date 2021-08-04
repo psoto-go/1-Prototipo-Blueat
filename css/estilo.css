@@ -1,0 +1,110 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    ". middle ."
+    "footer footer footer"; 
+    grid-gap: 15px;
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-rows: 4fr 400px 1fr;
+}
+.header {
+    grid-area: header;
+    padding: 25px;
+    text-align: center;
+}
+.middle {
+    grid-area: middle;
+    padding: 35px;
+}
+.footer {
+    grid-area: footer;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.header h2 {
+    font-size: 2rem;
+    margin: 25px;
+    padding: 15px;
+    color: #1EB9C6;
+}
+.header p {
+    font-size: 1.5rem;
+    margin: 25px;
+    width: 70%;
+    margin: auto;
+}
+
+.containerForm {
+    display: grid;
+    grid-template-areas: 
+    "nombre msj"
+    "mail msj"
+    "boton boton";
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 5fr 5fr 2fr;
+    font-size: 1rem;
+    
+}
+.nombre {
+    grid-area: nombre;
+    padding: 15px;
+    margin: 15px;
+}
+.nombre input {
+    margin: 15px;
+    border: none;
+    border-bottom: black 1px solid;
+    width: 200px;
+    height: 40px;
+}
+.mail {
+    grid-area: mail;
+    padding: 15px;
+    margin: 25px;
+}
+.mail input {
+    margin: 15px;
+    border: none;
+    border-bottom: black 1px solid;
+    width: 200px;
+    height: 40px;
+}
+.msj {
+    grid-area: msj;
+    padding: 25px;
+}
+.msj textarea {
+    display : block;
+  
+    padding : 10px;
+    margin: 10px;
+    width   : 340px;
+    height  : 160px;
+  
+    resize  : none;
+    overflow: auto;
+  }
+
+.boton {
+    grid-area: boton;
+    padding: 25px;
+    margin: auto;
+}
+.boton input {
+    background-color: #1EB9C6;
+    width: 200px;
+    height: 40px;
+    border-radius: 5%;
+}
