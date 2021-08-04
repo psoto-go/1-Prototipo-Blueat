@@ -1,0 +1,16 @@
+// BASE
+@import "../base/fonts";
+@import "../base/normalize";
+@import "../base/variables";
+@import "./extends.scss";
+
+// COMPONENTS
+@import "../components/footer";
+@import "../components/main";
+@import "../components/navbar";
+
+// PAGES
+@import "../pages/home";
+
+//QUERIES
+@import "../mediaQuery/query";

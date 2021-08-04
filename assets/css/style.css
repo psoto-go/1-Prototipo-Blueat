@@ -1,0 +1,105 @@
+@font-face {
+  font-family: hanken-book;
+  src: url(/fonts/hanken-book-webfont.woff);
+}
+@font-face {
+  font-family: hanken-light;
+  src: url(/fonts//hanken-light-webfont.woff);
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  margin: 130px, 160px;
+}
+
+.flex-container .navbar .navbar-icons i:hover, .flex-container .navbar .navbar-list .navbar-item:hover, .flex-container .navbar .navbar-logo h3.logo:hover, .footer-container .footer-box i:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  cursor: pointer;
+  text-shadow: 2px 7px 7px #c4c4c4;
+}
+
+.footer-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 68px;
+  bottom: 0px;
+  background: #c4c4c4;
+}
+.footer-container .footer-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-content: center;
+  padding: 1.5rem 2rem;
+}
+.footer-container .footer-box h3.logo {
+  font-family: "hanken-book";
+  color: #ffffff;
+  font-size: 2rem;
+  align-content: center;
+}
+.footer-container .footer-box i {
+  color: #ffffff;
+  font-size: 1.7rem;
+}
+.footer-container .footer-box i:hover {
+  color: #83adff;
+}
+.footer-container .footer-box h4 {
+  font-size: 1rem;
+  color: #ffffff;
+  padding-top: 0.5rem;
+}
+
+.flex-container {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 84px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.flex-container .navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-content: center;
+  padding: 1.5rem 2rem;
+}
+.flex-container .navbar .navbar-logo {
+  justify-items: left;
+  align-items: center;
+}
+.flex-container .navbar .navbar-logo h3.logo {
+  font-family: "hanken-book";
+  color: #1eb9c6;
+  font-size: 2rem;
+  align-content: center;
+}
+.flex-container .navbar .navbar-list {
+  justify-items: right;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.flex-container .navbar .navbar-list .navbar-item {
+  padding-left: 25px;
+}
+.flex-container .navbar .navbar-icons i {
+  color: #1eb9c6;
+  font-size: 1.7rem;
+  padding-right: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
