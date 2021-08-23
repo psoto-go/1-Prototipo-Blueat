@@ -1,31 +1,24 @@
 .flex-container {
+  position: relative;
   display: flex;
-  position: absolute;
   width: 100%;
-  height: 84px;
+  height: 92px;
   left: 0px;
   top: 0px;
   background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   .navbar {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    align-content: center;
+    align-items: center;
     padding: 1.5rem 2rem;
 
     .navbar-logo {
       justify-items: left;
       align-items: center;
-      h3.logo {
-        font-family: "hanken-book";
-        color: $logo-color;
-        font-size: 2rem;
-        align-content: center;
-        &:hover {
-          @extend %transform-hov;
-        }
+      img:hover {
+        @extend %transform-hov;
       }
     }
 
@@ -35,28 +28,21 @@
       display: flex;
       flex-direction: row;
       .navbar-item {
-        padding-left: 6rem;
+        font-family: "hanken-book";
+        font-size: 20px;
+        color: #1eb9c6;
         &:hover {
           @extend %transform-hov;
         }
+      }
+      .navbar-item:not(:first-child) {
+        padding-left: 6rem;
       }
     }
 
     .navbar-icons {
-      .input-search {
-        border-radius: 10px;
-        border: solid $logo-color;
-        outline: transparent;
-        margin-right: 0.5rem;
-        padding: 0.4rem 1rem;
-      }
-      i {
-        color: $logo-color;
-        font-size: 1.7rem;
-        padding-right: 0.5rem;
-        &:hover {
-          @extend %transform-hov;
-        }
+      img:hover {
+        @extend %transform-hov;
       }
     }
   }

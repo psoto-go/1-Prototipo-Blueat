@@ -1,88 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ICONS -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
 
+    <!-- lightslider -->
+    <script
+      src="https://code.jquery.com/jquery-1.11.0.js"
+      integrity="sha256-zgND4db0iXaO7v4CLBIYHGoIIudWI5hRMQrPB20j0Qw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/lightslider.min.js"></script>
+    <link
+      type="text/css"
+      rel="stylesheet"
+      href="./assets/css/lightslider.css"
+    />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <!--SEO-->
-    <meta name="author" content="Ayelen Barrale. Web Development"/>
-    <meta name="copyright" content="Blueat 2021"/>
-    <meta name="keywords" content="supermercado online, compra económica, carrefour, mercadona, recetas">
-    <meta name="description" content="Tienda online donde puedes hacer tus compras en base a recetas que vayas a cocinar en la semana.">
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    <meta name="author" content="Ayelen Barrale. Web Development" />
+    <meta name="copyright" content="Blueat 2021" />
+    <meta
+      name="keywords"
+      content="supermercado online, compra económica, carrefour, mercadona, recetas"
+    />
+    <meta
+      name="description"
+      content="Tienda online donde puedes hacer tus compras en base a recetas que vayas a cocinar en la semana."
+    />
+    <link rel="shortcut icon" href="" type="image/x-icon" />
     <title>Blueat</title>
     <!--Protocolo Open Graph-->
-   <meta property= "og:title" content="Blueat">
-   <meta property= "og:description" content="Tienda online donde puedes hacer tus compras en base a recetas que vayas a cocinar en la semana.">
-   <meta property= "og:image" content= "" >
-   <meta property= "og:url" content= "https://blueat.es" >
-   <meta property= "og:type" content= "website" >
-   <meta property= "og:locale" content= "es_ES" >
-
-</head>
-<body>
+    <meta property="og:title" content="Blueat" />
+    <meta
+      property="og:description"
+      content="Tienda online donde puedes hacer tus compras en base a recetas que vayas a cocinar en la semana."
+    />
+    <meta property="og:image" content="" />
+    <meta property="og:url" content="https://blueat.es" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+  </head>
+  <body>
+    <!---------- navbar ----------->
     <header class="flex-container">
-        <nav class="navbar">
-            <div class="navbar-logo">
-                <h3 class="logo">BluEat</h3>
-            </div>
-            <ul class="navbar-list">
-                <li class="navbar-item"><a href=""></a>Nosotros / Función</li>
-                <li class="navbar-item"><a href=""></a>Recetas</li>
-                <li class="navbar-item"><a href=""></a>Contacto</li>
-                <li class="navbar-item"><a href=""></a>Registro / Iniciar</li>
-            </ul>
-            <div class="navbar-icons">
-                <input type="text" class="input-search" placeholder="Busca tu receta">
-                <a href="" class="search-icon"><i class="fas fa-search"></i></a>
-                <a href="" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-        </nav>
+      <nav class="navbar">
+        <div class="navbar-logo">
+          <!-- <h3 class="logo">BluEat</h3> -->
+          <img src="img/BLUEAT.png" alt="blueat logo" />
+        </div>
+        <ul class="navbar-list">
+          <li class="navbar-item"><a href=""></a>Nosotros / Función</li>
+          <li class="navbar-item"><a href=""></a>Recetas</li>
+          <li class="navbar-item"><a href=""></a>Contacto</li>
+          <li class="navbar-item"><a href=""></a>Registro / Iniciar</li>
+        </ul>
+        <div class="navbar-icons">
+          <img src="img/IconoPerfil.png" alt="user icon" />
+          <img src="img/cart-icon.png" alt="cart icon" />
+        </div>
+      </nav>
     </header>
 
-    <!-- NOSOTROS SECTION -->
-    <div class="nosotros-container">
-        <h2 class="nosotros-title">Nosotros/Función</h2>
-        <div class="steps-container">
-            <p class="nosotros-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. A corrupti quas minima maxime nihil, quis animi enim maiores vel, natus, dolore nobis! Nostrum quae assumenda vel dicta, vero atque necessitatibus.</p>
-            <div>
-                <img class="funcion-img" src="./img/IMG Template.png" alt="">
-                <p class="funcion-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem ad iste ea veniam sed, officia nesciunt numquam eum aliquam facere eos quidem! Quaerat delectus at minima, cum consectetur animi!</p>
-            </div>
-            <div>
-                <img class="funcion-img" src="./img/IMG Template.png" alt="">
-                <p class="funcion-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem ad iste ea veniam sed, officia nesciunt numquam eum aliquam facere eos quidem! Quaerat delectus at minima, cum consectetur animi!</p>
-            </div>
-            <div>
-                <img class="funcion-img" src="./img/IMG Template.png" alt="">
-                <p class="funcion-txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi rem ad iste ea veniam sed, officia nesciunt numquam eum aliquam facere eos quidem! Quaerat delectus at minima, cum consectetur animi!</p>
-            </div>
-        </div>
+    <!---------- slider top image ---------->
+    <div class="slider-container">
+      <img src="img/slider-main.png" alt="" />
+      <div class="text-slider-main">
+        <p class="text">
+          ¿QUÉ QUIERES COMER HOY? <br /><span class="text-2"
+            >ESCOGE TU RECETA
+          </span>
+          <br />
+          QUE LOS INGREDIENTES <br /><span class="text-2"
+            >LO LLEVAMOS NOSOTROS.</span
+          >
+        </p>
+        <button class="btn-slider-main">Escoger</button>
+      </div>
     </div>
-    <!-- FIN NOOTROS SECTION -->
 
+    <!--------- como comprar ------------>
+    <div class="howBuy-section"></div>
+
+    <!--------- FAVS ------------>
+    <section class="fav-section">
+      <div class="cards-left">
+        <button type="button" id="goToPrevSlide">
+          <img src="./img/ArrowCircleRight.png" alt="" />
+        </button>
+        <ul id="autoWidth" class="cs-hidden">
+          <li class="item-a">
+            <div class="cardFav">
+              <img src="./img/tapas-keto.png" alt="" class="imgFav" />
+              <div class="overlay">
+                <div class="overlay-top">
+                  <p class="textOverlay">Tapas keto</p>
+                  <i class="fas fa-clock"></i>
+                  <p class="textOverlay-2">1h30m</p>
+                  <i class="fas fa-utensils"></i>
+                  <p class="textOverlay-2">4-6</p>
+                </div>
+
+                <div class="detailOverlay">
+                  <a class="txtDetailOver" href="#">Ver recetas</a>
+                </div>
+              </div>
+              <div class="detailCard">
+                <p class="textFav">Tapas keto</p>
+              </div>
+            </div>
+          </li>
+          <li class="item-b">
+            <div class="cardFav">
+              <img src="./img/tapas-keto.png" alt="" class="imgFav" />
+              <div class="overlay">
+                <div class="overlay-top">
+                  <p class="textOverlay">Tapas keto</p>
+                  <i class="fas fa-clock"></i>
+                  <p class="textOverlay-2">1h30m</p>
+                  <i class="fas fa-utensils"></i>
+                  <p class="textOverlay-2">4-6</p>
+                </div>
+
+                <div class="detailOverlay">
+                  <a class="txtDetailOver" href="#">Ver recetas</a>
+                </div>
+              </div>
+              <div class="detailCard">
+                <p class="textFav">Tapas keto</p>
+              </div>
+            </div>
+          </li>
+          <li class="item-c">
+            <div class="cardFav">
+              <img src="./img/tapas-keto.png" alt="" class="imgFav" />
+              <div class="overlay">
+                <div class="overlay-top">
+                  <p class="textOverlay">Tapas keto</p>
+                  <i class="fas fa-clock"></i>
+                  <p class="textOverlay-2">1h30m</p>
+                  <i class="fas fa-utensils"></i>
+                  <p class="textOverlay-2">4-6</p>
+                </div>
+
+                <div class="detailOverlay">
+                  <a class="txtDetailOver" href="#">Ver recetas</a>
+                </div>
+              </div>
+              <div class="detailCard">
+                <p class="textFav">Tapas keto</p>
+              </div>
+            </div>
+          </li>
+          <li class="item-d">
+            <div class="cardFav">
+              <img src="./img/tapas-keto.png" alt="" class="imgFav" />
+              <div class="overlay">
+                <div class="overlay-top">
+                  <p class="textOverlay">Tapas keto</p>
+                  <i class="fas fa-clock"></i>
+                  <p class="textOverlay-2">1h30m</p>
+                  <i class="fas fa-utensils"></i>
+                  <p class="textOverlay-2">4-6</p>
+                </div>
+
+                <div class="detailOverlay">
+                  <a class="txtDetailOver" href="#">Ver recetas</a>
+                </div>
+              </div>
+              <div class="detailCard">
+                <p class="textFav">Tapas keto</p>
+              </div>
+            </div>
+          </li>
+          <li class="item-e">
+            <div class="cardFav">
+              <img src="./img/tapas-keto.png" alt="" class="imgFav" />
+              <div class="overlay">
+                <div class="overlay-top">
+                  <p class="textOverlay">Tapas keto</p>
+                  <i class="fas fa-clock"></i>
+                  <p class="textOverlay-2">1h30m</p>
+                  <i class="fas fa-utensils"></i>
+                  <p class="textOverlay-2">4-6</p>
+                </div>
+
+                <div class="detailOverlay">
+                  <a class="txtDetailOver" href="#">Ver recetas</a>
+                </div>
+              </div>
+              <div class="detailCard">
+                <p class="textFav">Tapas keto</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button type="button" id="goToNextSlide">
+          <img src="./img/ArrowCircleRight (1).png" alt="" />
+        </button>
+      </div>
+      <div class="fav-right">
+        <p class="text-fav">
+          Los favs <br />de los <br />
+          blueaters
+        </p>
+        <img class="cart-img" src="./img/IlustCarro.png" alt="" />
+      </div>
+    </section>
+
+    <!---------- footer ------------->
     <footer class="footer-container">
-        <div class="footer-box">
-            <h3 class="logo">BluEat</h3>
-            <h4>BluEat Copyright © 2021. All rights reserved</h4>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-        </div>
+      <img class="blueat-logo-2" src="img/BLUEAT-white.png" alt="" />
+      <div class="rrss-icons">
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+        <a href="#"><i class="fab fa-pinterest fa-2x"></i></a>
+      </div>
+      <div class="legales">
+        <a href="#">Aviso legal</a>
+        <a href="#">Política de privacidad</a>
+        <a href="#">política de cookies</a>
+      </div>
+      <img class="arrow-top" src="img/up-arrow.png" alt="" />
+      <img class="footer-bg" src="img/footer-bg.png" alt="" />
     </footer>
 
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#lightSlider").lightSlider({
+          auto: true,
+          loop: true,
+          speed: 1000,
+          pause: 3000,
+          pauseOnHover: true,
+          controls: false,
+        });
+      });
+      $(document).ready(function () {
+        $("#autoWidth").lightSlider({
+          autoWidth: true,
+          auto: true,
+          loop: true,
+          speed: 1000,
+          pause: 3000,
+          pauseOnHover: true,
+          controls: false,
+          onSliderLoad: function () {
+            $("#autoWidth").removeClass("cS-hidden");
+          },
+        });
+      });
 
-
-</body>
+      $("#goToPrevSlide").on("click", function () {
+        slider.goToPrevSlide();
+      });
+      $("#goToNextSlide").on("click", function () {
+        slider.goToNextSlide();
+      });
+    </script>
+  </body>
 </html>

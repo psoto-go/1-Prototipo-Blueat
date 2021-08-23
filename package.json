@@ -1,0 +1,22 @@
+{
+  "name": "1-prototipo-blueat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psoto-go/1-Prototipo-Blueat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psoto-go/1-Prototipo-Blueat/issues"
+  },
+  "homepage": "https://github.com/psoto-go/1-Prototipo-Blueat#readme",
+  "dependencies": {
+    "lightslider": "^1.1.6"
+  }
+}

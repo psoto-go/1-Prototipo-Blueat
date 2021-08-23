@@ -19,73 +19,114 @@ body {
   margin: 130px, 160px;
 }
 
-.flex-container .navbar .navbar-icons i:hover, .flex-container .navbar .navbar-list .navbar-item:hover, .flex-container .navbar .navbar-logo h3.logo:hover, .footer-container .footer-box i:hover {
+.flex-container .navbar .navbar-icons img:hover, .flex-container .navbar .navbar-list .navbar-item:hover, .flex-container .navbar .navbar-logo img:hover, .slider-container .text-slider-main .btn-slider-main:hover, .footer-container .legales a:hover, .footer-container .rrss-icons .fab:hover, .footer-container .arrow-top:hover {
   transform: scale(1.1);
   transition: all 1s;
   cursor: pointer;
   text-shadow: 2px 7px 7px #c4c4c4;
 }
 
-.footer-container {
-  display: flex;
-  width: 100%;
-  height: 68px;
-  margin-top: 2rem;
-  background: #c4c4c4;
-}
-.footer-container .footer-box {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  align-content: center;
-  padding: 1.5rem 2rem;
-}
-.footer-container .footer-box h3.logo {
-  font-family: "hanken-book";
+.footer-container .legales a {
+  text-decoration: none;
   color: #ffffff;
-  font-size: 2rem;
-  align-content: center;
-}
-.footer-container .footer-box i {
-  color: #ffffff;
-  font-size: 1.7rem;
-}
-.footer-container .footer-box i:hover {
-  color: #83adff;
-}
-.footer-container .footer-box h4 {
-  font-size: 1rem;
-  color: #ffffff;
-  padding-top: 0.5rem;
-  padding-right: 6rem;
 }
 
-.flex-container {
+.footer-container {
+  position: relative;
   display: flex;
-  position: absolute;
+}
+.footer-container .footer-bg {
   width: 100%;
-  height: 84px;
+  z-index: -1;
+}
+.footer-container .arrow-top {
+  position: absolute;
+  width: 5rem;
+  margin-left: 90%;
+}
+.footer-container .blueat-logo-2 {
+  position: absolute;
+  margin-left: 85%;
+  margin-top: 35%;
+}
+.footer-container .rrss-icons {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 11rem;
+  margin-left: 83%;
+  margin-top: 38%;
+}
+.footer-container .rrss-icons .fab {
+  color: #ffffff;
+}
+.footer-container .legales {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 26rem;
+  margin-left: 71%;
+  margin-top: 41%;
+}
+.slider-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+.slider-container img {
+  width: 100%;
+}
+.slider-container .text-slider-main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.slider-container .text-slider-main .text {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  text-align: center;
+  color: #ffffff;
+}
+.slider-container .text-slider-main .text-2 {
+  font-weight: 900;
+  font-size: 2.4rem;
+  line-height: 3rem;
+  font-family: Roboto;
+}
+.slider-container .text-slider-main .btn-slider-main {
+  margin-top: 2rem;
+  width: 16rem;
+  height: 4rem;
+  color: #0f8d98;
+  border-radius: 30px;
+  border: none;
+  font-family: "hanken-book";
+  font-size: 1.5rem;
+}
+.flex-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 92px;
   left: 0px;
   top: 0px;
   background: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .flex-container .navbar {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  align-content: center;
+  align-items: center;
   padding: 1.5rem 2rem;
 }
 .flex-container .navbar .navbar-logo {
   justify-items: left;
   align-items: center;
-}
-.flex-container .navbar .navbar-logo h3.logo {
-  font-family: "hanken-book";
-  color: #1eb9c6;
-  font-size: 2rem;
-  align-content: center;
 }
 .flex-container .navbar .navbar-list {
   justify-items: right;
@@ -94,27 +135,186 @@ body {
   flex-direction: row;
 }
 .flex-container .navbar .navbar-list .navbar-item {
+  font-family: "hanken-book";
+  font-size: 20px;
+  color: #1eb9c6;
+}
+.flex-container .navbar .navbar-list .navbar-item:not(:first-child) {
   padding-left: 6rem;
 }
-.flex-container .navbar .navbar-icons .input-search {
-  border-radius: 10px;
-  border: solid #1eb9c6;
-  outline: transparent;
-  margin-right: 0.5rem;
-  padding: 0.4rem 1rem;
+.fav-section {
+  width: 100%;
+  height: 500px;
+  background-color: #1eb9c6;
+  display: grid;
+  grid-template-columns: 75% 1fr;
+  grid-gap: 10px;
 }
-.flex-container .navbar .navbar-icons i {
+.fav-section .cards-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 2rem;
+}
+.fav-section .cards-left .lSSlideOuter .lSPager.lSpg {
+  visibility: hidden;
+}
+.fav-section .cards-left #goToNextSlide,
+.fav-section .cards-left #goToPrevSlide {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 0 1.5rem;
+}
+.fav-section .cards-left .cardFav {
+  border-radius: 15px;
+  width: 15rem;
+  min-height: 20.3rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.fav-section .cards-left .cardFav .imgFav {
+  object-fit: cover;
+}
+.fav-section .cards-left .cardFav .detailCard {
+  background-color: rgba(38, 50, 56, 0.6);
+  height: 2.62rem;
+  border-radius: 0px 0px 14px 14px;
+  width: 100%;
+  bottom: 0;
+}
+.fav-section .cards-left .cardFav .detailCard .textFav {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-align: right;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+}
+.fav-section .cards-left .cardFav .overlay {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 15px;
+  width: 15rem;
+  min-height: 22.9rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgba(38, 50, 56, 0.6);
+}
+.fav-section .cards-left .cardFav .overlay .overlay-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay,
+.fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay-2,
+.fav-section .cards-left .cardFav .overlay .overlay-top i {
+  color: #ffffff;
+}
+.fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay,
+.fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay-2 {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+.fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay {
+  font-size: 1.25rem;
+  padding-top: 5rem;
+}
+.fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay-2 {
+  font-size: 1rem;
+}
+.fav-section .cards-left .cardFav .overlay .overlay-top i {
+  padding-top: 1rem;
+  padding-bottom: 0.3rem;
+}
+.fav-section .cards-left .cardFav .overlay .detailOverlay {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  height: 2.62rem;
+  border-radius: 0px 0px 14px 14px;
+  width: 100%;
+  bottom: 0;
+}
+.fav-section .cards-left .cardFav .overlay .detailOverlay .txtDetailOver {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 700;
   color: #1eb9c6;
-  font-size: 1.7rem;
-  padding-right: 0.5rem;
+  font-size: 1.1rem;
 }
-.nosotros-container {
-  margin: 8rem 7rem 3rem 7rem;
+.fav-section .cards-left .cardFav:hover .overlay {
+  visibility: visible;
+  animation: fade 0.5s;
 }
-.nosotros-container .nosotros-title {
-  color: #1eb9c6;
-  font-size: 4rem;
-  padding-bottom: 2rem;
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fav-section .fav-right {
+  position: relative;
+}
+.fav-section .fav-right .text-fav {
+  font-family: "Roboto";
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 3.15rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  position: absolute;
+  z-index: 1;
+  margin: 25% 0 0 10%;
+}
+.fav-section .fav-right .cart-img {
+  position: absolute;
+  width: 100%;
+  margin-top: 20%;
+}
+
+.howBuy-section {
+  width: 100%;
+  height: 407px;
+  background-color: #ffffff;
+}
+
+@media only screen and (max-width: 1280px) {
+  .fav-section .fav-right .text-fav {
+    margin-top: 35%;
+    margin-left: -10%;
+  }
+  .fav-section .fav-right .cart-img {
+    width: 125%;
+    margin-top: 45%;
+    margin-left: -20%;
+  }
+
+  .footer-container .blueat-logo-2 {
+    margin-left: 86%;
+    margin-top: 35%;
+  }
+  .footer-container .rrss-icons {
+    margin-top: 39%;
+  }
+  .footer-container .legales {
+    margin-left: 64%;
+    margin-top: 43%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

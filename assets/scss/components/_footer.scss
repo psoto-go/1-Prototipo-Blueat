@@ -1,36 +1,54 @@
 .footer-container {
+  position: relative;
   display: flex;
-  //position: absolute;
-  width: 100%;
-  height: 68px;
-  //bottom: 0px;
-  margin-top: 2rem;
-  background: $grey-color;
-  .footer-box {
+  .footer-bg {
+    width: 100%;
+    z-index: -1;
+  }
+
+  .arrow-top {
+    position: absolute;
+    width: 5rem;
+    margin-left: 90%;
+
+    &:hover {
+      @extend %transform-hov;
+    }
+  }
+
+  .blueat-logo-2 {
+    position: absolute;
+    margin-left: 85%;
+    margin-top: 35%;
+  }
+  .rrss-icons {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    align-content: center;
-    padding: 1.5rem 2rem;
-    h3.logo {
-      font-family: "hanken-book";
+    position: absolute;
+    width: 11rem;
+
+    margin-left: 83%;
+    margin-top: 38%;
+    .fab {
       color: $white-color;
-      font-size: 2rem;
-      align-content: center;
-    }
-    i {
-      color: $white-color;
-      font-size: 1.7rem;
       &:hover {
-        color: $lightBlue-color;
         @extend %transform-hov;
       }
     }
-    h4 {
-      font-size: 1rem;
-      color: $white-color;
-      padding-top: 0.5rem;
-      padding-right: 6rem;
+  }
+  .legales {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 26rem;
+
+    margin-left: 71%;
+    margin-top: 41%;
+    a {
+      @extend %links;
+      &:hover {
+        @extend %transform-hov;
+      }
     }
   }
 }
