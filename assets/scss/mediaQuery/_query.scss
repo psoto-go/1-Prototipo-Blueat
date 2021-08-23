@@ -12,6 +12,20 @@
       }
     }
   }
+
+  .howBuy-section {
+    .howBuy-title {
+      padding-right: 0;
+    }
+    .step {
+      width: 13rem;
+      height: 19rem;
+    }
+    .step:not(:last-child) {
+      margin-left: 1rem;
+    }
+  }
+
   .footer-container {
     .blueat-logo-2 {
       margin-left: 86%;

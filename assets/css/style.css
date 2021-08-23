@@ -288,9 +288,72 @@ body {
 }
 
 .howBuy-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   width: 100%;
-  height: 407px;
+  height: 400px;
   background-color: #ffffff;
+  padding: 4rem 0 4rem 1rem;
+  justify-content: center;
+  align-content: center;
+}
+.howBuy-section .howBuy-title {
+  padding-right: 2rem;
+  padding-top: 4rem;
+  text-align: right;
+  align-content: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #1eb9c6;
+  font-family: "Roboto";
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 2.5rem;
+}
+.howBuy-section .step {
+  width: 18rem;
+  height: 20rem;
+  text-align: center;
+  color: #ffffff;
+}
+.howBuy-section .step .capitalNum {
+  position: absolute;
+  padding-left: 0.5rem;
+  text-align: left;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 7rem;
+  color: rgba(255, 255, 255, 0.4);
+}
+.howBuy-section .step .step-content img {
+  padding-top: 1rem;
+}
+.howBuy-section .step .step-content p {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+.howBuy-section .step h3 {
+  text-transform: uppercase;
+  text-align: left;
+  padding: 4rem 0 0 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.howBuy-section .step1,
+.howBuy-section .step2,
+.howBuy-section .step4 {
+  background-color: #538add;
+}
+.howBuy-section .step3 {
+  background: linear-gradient(90deg, #44cae8 0%, #5482db 100%);
+}
+.howBuy-section .step1 {
+  border-radius: 17px 0 0 17px;
+}
+.howBuy-section .step4 {
+  border-radius: 0 17px 17px 0;
 }
 
 @media only screen and (max-width: 1280px) {
@@ -302,6 +365,17 @@ body {
     width: 125%;
     margin-top: 45%;
     margin-left: -20%;
+  }
+
+  .howBuy-section .howBuy-title {
+    padding-right: 0;
+  }
+  .howBuy-section .step {
+    width: 13rem;
+    height: 19rem;
+  }
+  .howBuy-section .step:not(:last-child) {
+    margin-left: 1rem;
   }
 
   .footer-container .blueat-logo-2 {
