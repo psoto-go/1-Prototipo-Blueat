@@ -54,9 +54,11 @@
     }
   }
   .step1,
-  .step2,
   .step4 {
     background-color: rgba(83, 138, 221, 1);
+  }
+  .step2 {
+    background: linear-gradient(90deg, #538add 0%, #4fbfec 100%);
   }
   .step3 {
     background: linear-gradient(90deg, #44cae8 0%, #5482db 100%);

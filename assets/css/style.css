@@ -338,9 +338,11 @@ body {
   font-weight: 700;
 }
 .howBuy-section .step1,
-.howBuy-section .step2,
 .howBuy-section .step4 {
   background-color: #538add;
+}
+.howBuy-section .step2 {
+  background: linear-gradient(90deg, #538add 0%, #4fbfec 100%);
 }
 .howBuy-section .step3 {
   background: linear-gradient(90deg, #44cae8 0%, #5482db 100%);
