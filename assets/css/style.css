@@ -154,7 +154,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 1rem;
   margin-top: 2rem;
 }
 .fav-section .cards-left .lSSlideOuter .lSPager.lSpg {
@@ -165,7 +164,7 @@ body {
   background-color: transparent;
   border: none;
   color: #ffffff;
-  padding: 0 1.5rem;
+  padding: 0 0.7rem;
 }
 .fav-section .cards-left .cardFav {
   border-radius: 15px;
@@ -215,25 +214,21 @@ body {
   justify-content: center;
 }
 .fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay,
-.fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay-2,
-.fav-section .cards-left .cardFav .overlay .overlay-top i {
-  color: #ffffff;
-}
-.fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay,
 .fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay-2 {
   font-family: "Roboto";
   font-weight: 500;
+  color: #ffffff;
 }
 .fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay {
   font-size: 1.25rem;
-  padding-top: 5rem;
+  padding: 2rem 0;
 }
 .fav-section .cards-left .cardFav .overlay .overlay-top .textOverlay-2 {
   font-size: 1rem;
 }
-.fav-section .cards-left .cardFav .overlay .overlay-top i {
+.fav-section .cards-left .cardFav .overlay .overlay-top img {
   padding-top: 1rem;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.5rem;
 }
 .fav-section .cards-left .cardFav .overlay .detailOverlay {
   position: absolute;
@@ -277,14 +272,15 @@ body {
   font-size: 3.15rem;
   text-transform: uppercase;
   line-height: 2.5rem;
+  text-align: left;
   position: absolute;
   z-index: 1;
-  margin: 25% 0 0 10%;
+  margin-top: 25%;
 }
 .fav-section .fav-right .cart-img {
   position: absolute;
   width: 100%;
-  margin-top: 20%;
+  padding-top: 7rem;
 }
 
 .howBuy-section {
@@ -294,7 +290,7 @@ body {
   width: 100%;
   height: 400px;
   background-color: #ffffff;
-  padding: 4rem 0 4rem 1rem;
+  padding: 4rem 0;
   justify-content: center;
   align-content: center;
 }
@@ -404,15 +400,182 @@ body {
   margin-top: 1.7rem;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1919px) {
-  .fav-section .fav-right .text-fav {
+.packs-section {
+  width: 100%;
+  height: 500px;
+  background-color: #538add;
+  display: grid;
+  grid-template-columns: 1fr 80%;
+  grid-gap: 10px;
+}
+.packs-section .pack-left {
+  position: relative;
+  padding-left: 3rem;
+}
+.packs-section .pack-left .text-pack {
+  text-align: right;
+  font-family: "Roboto";
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 3.15rem;
+  text-transform: uppercase;
+  line-height: 2.5rem;
+  position: absolute;
+  z-index: 1;
+  padding: 5rem 0 0 2rem;
+}
+.packs-section .pack-left .pack-img {
+  position: absolute;
+  width: 100%;
+  padding-top: 2rem;
+}
+.packs-section .cards-right,
+.packs-section ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.packs-section .cards-right .item,
+.packs-section ul .item {
+  padding: 0 1rem;
+}
+.packs-section .cards-right .btnPrevNext,
+.packs-section ul .btnPrevNext {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 0 0.5rem;
+}
+.packs-section .cards-right .cardFav,
+.packs-section ul .cardFav {
+  border-radius: 15px;
+  width: 15rem;
+  min-height: 20.3rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.packs-section .cards-right .cardFav .imgFav,
+.packs-section ul .cardFav .imgFav {
+  object-fit: cover;
+}
+.packs-section .cards-right .cardFav .detailCard,
+.packs-section ul .cardFav .detailCard {
+  background-color: rgba(38, 50, 56, 0.6);
+  height: 2.62rem;
+  border-radius: 0px 0px 14px 14px;
+  width: 100%;
+  bottom: 0;
+}
+.packs-section .cards-right .cardFav .detailCard .textFav,
+.packs-section ul .cardFav .detailCard .textFav {
+  font-family: "Roboto";
+  font-weight: 300;
+  font-style: italic;
+  color: #ffffff;
+  font-size: 1.25rem;
+  text-align: right;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+}
+.packs-section .cards-right .cardFav .overlay,
+.packs-section ul .cardFav .overlay {
+  visibility: hidden;
+  position: absolute;
+  border-radius: 15px;
+  width: 15rem;
+  min-height: 22.9rem;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgba(38, 50, 56, 0.6);
+}
+.packs-section .cards-right .cardFav .overlay .overlay-top,
+.packs-section ul .cardFav .overlay .overlay-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.packs-section .cards-right .cardFav .overlay .overlay-top .textOverlay,
+.packs-section .cards-right .cardFav .overlay .overlay-top .textOverlay-2,
+.packs-section ul .cardFav .overlay .overlay-top .textOverlay,
+.packs-section ul .cardFav .overlay .overlay-top .textOverlay-2 {
+  font-family: "Roboto";
+  font-weight: 500;
+  color: #ffffff;
+}
+.packs-section .cards-right .cardFav .overlay .overlay-top .textOverlay,
+.packs-section ul .cardFav .overlay .overlay-top .textOverlay {
+  font-size: 1.25rem;
+  padding: 2rem 0;
+}
+.packs-section .cards-right .cardFav .overlay .overlay-top .textOverlay-2,
+.packs-section ul .cardFav .overlay .overlay-top .textOverlay-2 {
+  font-size: 1rem;
+}
+.packs-section .cards-right .cardFav .overlay .overlay-top img,
+.packs-section ul .cardFav .overlay .overlay-top img {
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+}
+.packs-section .cards-right .cardFav .overlay .detailOverlay,
+.packs-section ul .cardFav .overlay .detailOverlay {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  height: 2.62rem;
+  border-radius: 0px 0px 14px 14px;
+  width: 100%;
+  bottom: 0;
+}
+.packs-section .cards-right .cardFav .overlay .detailOverlay .txtDetailOver,
+.packs-section ul .cardFav .overlay .detailOverlay .txtDetailOver {
+  text-decoration: none;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #1eb9c6;
+  font-size: 1.1rem;
+}
+.packs-section .cards-right .cardFav:hover .overlay,
+.packs-section ul .cardFav:hover .overlay {
+  visibility: visible;
+  animation: fade 0.5s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media only screen and (min-width: 1279px) and (max-width: 1919px) {
+  .fav-section {
+    grid-template-columns: 70% 1fr;
+  }
+  .fav-section .fav-right p .text-fav {
     margin-top: 35%;
-    margin-left: -10%;
   }
   .fav-section .fav-right .cart-img {
-    width: 125%;
-    margin-top: 45%;
-    margin-left: -20%;
+    padding-top: 10rem;
+  }
+
+  .packs-section {
+    grid-template-columns: 1fr 75%;
+  }
+  .packs-section .pack-left .text-pack {
+    padding: 7rem 0 0 2rem;
+  }
+  .packs-section .pack-left .pack-img {
+    padding-top: 8rem;
   }
 
   .howBuy-section .howBuy-title {

@@ -1,14 +1,25 @@
-@media only screen and (min-width: 1280px) and (max-width: 1919px) {
+@media only screen and (min-width: 1279px) and (max-width: 1919px) {
   .fav-section {
+    grid-template-columns: 70% 1fr;
     .fav-right {
-      .text-fav {
+      p .text-fav {
         margin-top: 35%;
-        margin-left: -10%;
+        //margin-left: -5%;
       }
       .cart-img {
-        width: 125%;
-        margin-top: 45%;
-        margin-left: -20%;
+        padding-top: 10rem;
+      }
+    }
+  }
+
+  .packs-section {
+    grid-template-columns: 1fr 75%;
+    .pack-left {
+      .text-pack {
+        padding: 7rem 0 0 2rem;
+      }
+      .pack-img {
+        padding-top: 8rem;
       }
     }
   }
