@@ -50,17 +50,67 @@
     }
   }
 
+  .reviewSection {
+    .reviews-container {
+      .reviews-left {
+        margin: 7rem 0 0 6rem;
+      }
+      .reviews-center {
+        margin: 9.5rem 0 0 1.5rem;
+        .review-title {
+          font-size: 2.5rem;
+          line-height: 2.2rem;
+        }
+      }
+      .reviews-right {
+        margin: 6.5rem 0 0 1rem;
+      }
+      .reviews-leftD {
+        margin: 1.5rem 0 0 8rem;
+      }
+      .reviews-centerD {
+        margin: 3.5rem 0 0 3.5rem;
+      }
+      .reviews-rightD {
+        margin: 1rem 0;
+      }
+    }
+  }
+
   .footer-container {
-    .blueat-logo-2 {
-      margin-left: 86%;
-      margin-top: 35%;
+    .arrow-top {
+      margin-left: 90%;
     }
-    .rrss-icons {
-      margin-top: 39%;
-    }
-    .legales {
-      margin-left: 64%;
-      margin-top: 43%;
+
+    .footerRight {
+      margin-left: 62%;
+      margin-top: 2%;
+      p {
+        padding-top: 25%;
+      }
+      .blueat-logo-2 {
+        padding: 20% 0 0 60%;
+        width: 40%;
+      }
+      .rrss-icons {
+        width: 12rem;
+        padding: 1rem 0 1.5rem 14rem;
+
+        .fab {
+          color: $white-color;
+          &:hover {
+            @extend %transform-hov;
+          }
+        }
+      }
+      .pagoSeguro {
+        width: 50%;
+        margin-left: 50%;
+      }
+      .legales {
+        margin-top: 1.5rem;
+        width: 26rem;
+      }
     }
   }
 }

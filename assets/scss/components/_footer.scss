@@ -1,21 +1,91 @@
 .footer-container {
-  position: relative;
   display: flex;
+  position: relative;
   .footer-bg {
+    position: absolute;
     width: 100%;
     z-index: -1;
   }
-
   .arrow-top {
     position: absolute;
+    z-index: 1;
     width: 5rem;
-    margin-left: 90%;
+    margin-left: 92%;
 
     &:hover {
       @extend %transform-hov;
     }
   }
 
+  .footerRight {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+
+    margin-left: 74%;
+    margin-top: 5%;
+
+    p {
+      color: $lightBlue-green;
+      font-family: "Inter";
+      font-weight: 500;
+      font-size: 1.25rem;
+      padding-top: 30%;
+      text-align: right;
+    }
+
+    .logos-market {
+      display: flex;
+      padding: 2rem 0 0 8rem;
+      .logmarkets-right {
+        display: flex;
+        flex-direction: column;
+        img {
+          width: 120%;
+        }
+        .eroski {
+          padding-bottom: 0.5rem;
+        }
+      }
+    }
+
+    .blueat-logo-2 {
+      padding: 30% 0 0 45%;
+      width: 50%;
+    }
+
+    .rrss-icons {
+      display: flex;
+      justify-content: space-between;
+      width: 12rem;
+      padding: 2rem 0 2rem 12rem;
+
+      .fab {
+        color: $white-color;
+        &:hover {
+          @extend %transform-hov;
+        }
+      }
+    }
+
+    .legales {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 2rem;
+      width: 26rem;
+
+      a {
+        @extend %links;
+        &:hover {
+          @extend %transform-hov;
+        }
+      }
+    }
+  }
+}
+/* .footer-container {
   .blueat-logo-2 {
     position: absolute;
     margin-left: 85%;
@@ -52,3 +122,4 @@
     }
   }
 }
+ */
