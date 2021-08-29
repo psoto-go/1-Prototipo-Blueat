@@ -9,6 +9,9 @@ ej.: <!--------- como comprar ------------> refiere a la sección que identifica
 La resolución general en el cuál se basa este código es 1920, ideal para large screens, en query's se encuentran los estilos adaptativos para que cada componente se vea correctamente en resolución 1280 (ideal para small screens)
 
 A continuación se adjuntan dos muestras sobre cómo se visualiza la página desarrollada:
+
 RESOLUCIÓN 1920
+![muestra-1920-blueat](https://user-images.githubusercontent.com/79757893/131261354-c738ba00-6b71-4ce0-ae6f-d731fb8463b5.gif)
 
 RESOLUCIÓN 1280
+![Uploading muestra-1289.blueat.gif…]()
